@@ -3906,3 +3906,1501 @@ body:not(.loading) {
   }
 
 }
+/* =========================================================
+   NEROXA DIGITAL
+   FINAL RESPONSIVE SYSTEM
+   Desktop • Laptop • Tablet • Mobile • Small Phones
+   Existing design preserved
+========================================================= */
+
+/* ---------------------------------------------------------
+   GLOBAL RESPONSIVE SAFETY
+--------------------------------------------------------- */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+}
+
+img,
+video,
+svg,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP — 1400px+
+========================================================= */
+
+@media (min-width: 1400px) {
+
+  :root {
+    --page-padding: clamp(50px, 5vw, 90px);
+  }
+
+  .hero-title {
+    font-size: clamp(130px, 13vw, 220px);
+  }
+
+  .services-header h2,
+  .work-header h2,
+  .process-header h2 {
+    font-size: clamp(110px, 10vw, 155px);
+  }
+
+  .section-heading {
+    font-size: clamp(70px, 7vw, 110px);
+  }
+
+  .contact-main h2 {
+    font-size: clamp(110px, 12vw, 185px);
+  }
+
+  .statement h2 {
+    font-size: clamp(100px, 10vw, 155px);
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP — 1101px TO 1399px
+========================================================= */
+
+@media (min-width: 1101px) and (max-width: 1399px) {
+
+  :root {
+    --page-padding: clamp(35px, 4vw, 60px);
+  }
+
+  .hero-content {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 50px;
+  }
+
+  .hero-title {
+    font-size: clamp(95px, 12vw, 175px);
+  }
+
+  .services-header h2,
+  .work-header h2,
+  .process-header h2 {
+    font-size: clamp(85px, 9vw, 130px);
+  }
+
+  .about-grid {
+    gap: 55px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET — 901px TO 1100px
+========================================================= */
+
+@media (min-width: 901px) and (max-width: 1100px) {
+
+  :root {
+    --page-padding: 35px;
+  }
+
+  .site-header {
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+  }
+
+  .hero {
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .hero-title {
+    font-size: clamp(80px, 12vw, 135px);
+    white-space: normal;
+  }
+
+  .hero-description {
+    max-width: 480px;
+    transform: none;
+  }
+
+  .intro-content {
+    grid-template-columns: 1fr;
+    gap: 65px;
+    min-height: auto;
+    padding-top: 90px;
+  }
+
+  .section-heading {
+    font-size: clamp(60px, 8vw, 90px);
+  }
+
+  .intro-side {
+    max-width: 700px;
+  }
+
+  .services-header,
+  .work-header,
+  .process-header {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .services-header h2,
+  .work-header h2,
+  .process-header h2 {
+    font-size: clamp(75px, 10vw, 110px);
+  }
+
+  .projects {
+    gap: 35px 20px;
+  }
+
+  .project-visual {
+    min-height: 400px;
+  }
+
+  .project-large .project-visual {
+    min-height: 500px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .about-image {
+    aspect-ratio: .9 / 1;
+  }
+
+  .about-heading {
+    font-size: clamp(55px, 7vw, 85px);
+  }
+
+  .about-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-detail:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .project-enquiry {
+    grid-template-columns: 1fr 1.3fr;
+    gap: 50px;
+  }
+
+}
+
+
+/* =========================================================
+   GENERAL TABLET / MOBILE — 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  :root {
+    --page-padding: 24px;
+  }
+
+  .desktop-nav,
+  .header-contact {
+    display: none !important;
+  }
+
+  .site-header {
+    padding: 18px var(--page-padding);
+  }
+
+  .hero {
+    width: 100%;
+    min-height: 100svh;
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+  }
+
+  .hero-top {
+    width: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .hero-title {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .hero-description {
+    max-width: 500px;
+    transform: none;
+  }
+
+  .hero-description p {
+    max-width: 100%;
+  }
+
+  .intro-content {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .services-header,
+  .work-header,
+  .process-header {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-large {
+    grid-column: auto;
+  }
+
+  .project-visual,
+  .project-large .project-visual {
+    width: 100%;
+  }
+
+  .statement h2 {
+    max-width: 100%;
+  }
+
+  .process-item,
+  .service-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .service-main,
+  .process-main {
+    min-width: 0;
+  }
+
+  .service-main h3,
+  .process-item h3 {
+    overflow-wrap: anywhere;
+  }
+
+  .service-main p,
+  .process-item p {
+    max-width: 100%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-main h2 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .project-enquiry {
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .enquiry-heading,
+  .enquiry-form {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .form-row {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE — 701px TO 900px
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 900px) {
+
+  :root {
+    --page-padding: 28px;
+  }
+
+  .logo-mark {
+    width: 46px;
+    height: 46px;
+  }
+
+  .menu-toggle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .hero {
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+
+  .hero-title {
+    font-size: clamp(70px, 13vw, 120px);
+    line-height: .82;
+  }
+
+  .hero-title-bottom {
+    font-size: clamp(48px, 8vw, 85px);
+  }
+
+  .hero-description {
+    max-width: 480px;
+  }
+
+  .section-heading {
+    font-size: clamp(55px, 9vw, 85px);
+  }
+
+  .intro-side p {
+    font-size: clamp(21px, 3vw, 28px);
+  }
+
+  .services-header h2,
+  .work-header h2,
+  .process-header h2 {
+    font-size: clamp(65px, 11vw, 105px);
+  }
+
+  .service-item,
+  .process-item {
+    grid-template-columns: 45px minmax(0, 1fr) 45px;
+    gap: 20px;
+  }
+
+  .service-main h3,
+  .process-item h3 {
+    font-size: clamp(30px, 4vw, 45px);
+  }
+
+  .project-visual {
+    min-height: 400px;
+  }
+
+  .project-large .project-visual {
+    min-height: 500px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-heading {
+    font-size: clamp(48px, 7vw, 75px);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE — MAX 700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+  :root {
+    --page-padding: 20px;
+  }
+
+
+  /* ---------- GLOBAL ---------- */
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section-pad {
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+  }
+
+
+  /* ---------- HEADER ---------- */
+
+  .site-header {
+    width: 100%;
+    padding: 16px var(--page-padding);
+  }
+
+  .logo {
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .logo-mark {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    font-size: 15px;
+  }
+
+  .logo-text {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+  }
+
+
+  /* ---------- MOBILE MENU ---------- */
+
+  .mobile-menu {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .mobile-menu::before {
+    inset: 10px;
+  }
+
+  .menu-inner {
+    width: 100%;
+    height: 100%;
+    padding:
+      100px
+      var(--page-padding)
+      20px;
+  }
+
+  .menu-top {
+    width: 100%;
+    font-size: 7px;
+  }
+
+  .mobile-menu nav {
+    width: 100%;
+  }
+
+  .mobile-menu nav a {
+    width: 100%;
+    grid-template-columns: 30px minmax(0, 1fr) 22px;
+    gap: 8px;
+    padding: 14px 0;
+    font-size: clamp(30px, 9vw, 50px);
+    line-height: .9;
+  }
+
+  .menu-index {
+    font-size: 7px;
+  }
+
+  .menu-arrow {
+    font-size: 18px;
+  }
+
+  .mobile-menu-footer {
+    width: 100%;
+    font-size: 7px;
+  }
+
+
+  /* ---------- LOADER ---------- */
+
+  .page-loader {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .loader-word {
+    width: 100%;
+    padding: 0 20px;
+    font-size: clamp(55px, 18vw, 105px);
+    letter-spacing: -.07em;
+    white-space: nowrap;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    min-height: 100svh;
+    padding:
+      110px
+      var(--page-padding)
+      25px;
+  }
+
+  .hero-top {
+    gap: 20px;
+  }
+
+  .eyebrow {
+    max-width: 65%;
+    font-size: 8px;
+  }
+
+  .hero-location {
+    max-width: 30%;
+    font-size: 7px;
+    line-height: 1.5;
+  }
+
+  .hero-content {
+    gap: 45px;
+  }
+
+  .hero-small-title {
+    margin-bottom: 14px;
+    font-size: 8px;
+  }
+
+  .hero-title {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(54px, 16vw, 100px);
+    line-height: .8;
+    letter-spacing: -.075em;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .hero-title-bottom {
+    width: 100%;
+    margin-top: 16px;
+    gap: 15px;
+    font-size: clamp(38px, 10vw, 68px);
+    line-height: .82;
+    flex-wrap: wrap;
+  }
+
+  .hero-index {
+    font-size: 7px;
+    margin-bottom: 4px;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+    padding: 0;
+  }
+
+  .hero-description p {
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .hero-services {
+    display: none;
+  }
+
+  .hero-bottom {
+    width: 100%;
+  }
+
+  .hero-scroll {
+    font-size: 7px;
+  }
+
+  .scroll-line {
+    width: 38px;
+  }
+
+
+  /* ---------- INTRO ---------- */
+
+  .intro {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  .section-label {
+    width: 100%;
+    font-size: 7px;
+  }
+
+  .intro-content {
+    width: 100%;
+    padding-top: 65px;
+    gap: 50px;
+  }
+
+  .section-heading {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(48px, 14vw, 78px);
+    line-height: .88;
+  }
+
+  .intro-side {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .intro-side::before {
+    margin-bottom: 28px;
+  }
+
+  .intro-side p {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(19px, 5.3vw, 25px);
+    line-height: 1.3;
+  }
+
+
+  /* ---------- SECTION HEADERS ---------- */
+
+  .services,
+  .work,
+  .process,
+  .about {
+    padding-bottom: 110px;
+  }
+
+  .services-header,
+  .work-header,
+  .process-header {
+    width: 100%;
+    padding:
+      60px
+      0
+      55px;
+    gap: 28px;
+  }
+
+  .services-header h2,
+  .work-header h2,
+  .process-header h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(55px, 17vw, 95px);
+    line-height: .8;
+    overflow-wrap: break-word;
+  }
+
+  .services-header p,
+  .work-header p,
+  .process-header p {
+    width: 100%;
+    max-width: 340px;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+
+
+  /* ---------- SERVICES ---------- */
+
+  .services-list {
+    width: 100%;
+  }
+
+  .service-item {
+    min-height: 0;
+    width: 100%;
+    grid-template-columns: 28px minmax(0, 1fr) 36px;
+    gap: 12px;
+    padding: 28px 0;
+  }
+
+  .service-number {
+    align-self: start;
+    padding-top: 5px;
+    font-size: 7px;
+  }
+
+  .service-main {
+    min-width: 0;
+  }
+
+  .service-main h3 {
+    margin-bottom: 10px;
+    font-size: clamp(23px, 7.5vw, 34px);
+    line-height: .95;
+    overflow-wrap: anywhere;
+  }
+
+  .service-main p {
+    max-width: 100%;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .service-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .service-item:hover {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  /* ---------- WORK ---------- */
+
+  .projects {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .project-visual,
+  .project-large .project-visual {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .project-placeholder {
+    max-width: 90%;
+  }
+
+  .project-placeholder span {
+    font-size: clamp(40px, 13vw, 70px);
+  }
+
+  .project-placeholder small {
+    font-size: 7px;
+  }
+
+  .project-info {
+    width: 100%;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .project-info h3 {
+    font-size: 19px;
+    line-height: 1.15;
+  }
+
+  .project-meta {
+    gap: 8px;
+    font-size: 7px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .project-details {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 7px;
+  }
+
+  .project-details span + span::before {
+    display: none;
+  }
+
+
+  /* ---------- STATEMENT ---------- */
+
+  .statement {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .statement-content {
+    padding: 55px 0;
+  }
+
+  .statement-label {
+    margin-bottom: 30px;
+    font-size: 7px;
+  }
+
+  .statement h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(50px, 15vw, 90px);
+    line-height: .8;
+    overflow-wrap: break-word;
+  }
+
+  .statement-copy {
+    width: 100%;
+    max-width: 330px;
+    margin: 25px 0 0;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+
+
+  /* ---------- PROCESS ---------- */
+
+  .process-list {
+    width: 100%;
+  }
+
+  .process-item {
+    min-height: 0;
+    width: 100%;
+    grid-template-columns: 28px minmax(0, 1fr) 30px;
+    gap: 12px;
+    padding: 28px 0;
+  }
+
+  .process-number {
+    align-self: start;
+    padding-top: 5px;
+    font-size: 7px;
+  }
+
+  .process-item h3 {
+    font-size: clamp(23px, 7.5vw, 34px);
+    line-height: .95;
+    overflow-wrap: anywhere;
+  }
+
+  .process-item p {
+    max-width: 100%;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .process-icon {
+    font-size: 16px;
+  }
+
+  .process-item:hover {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  /* =====================================================
+     ABOUT
+     Existing About design preserved
+  ===================================================== */
+
+  .about {
+    width: 100%;
+  }
+
+  .about-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding-top: 60px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: .95 / 1;
+  }
+
+  .about-content {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+
+  .about-content h2,
+  .about-heading {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 38px;
+    font-size: clamp(48px, 14vw, 78px);
+    line-height: .83;
+    overflow-wrap: break-word;
+  }
+
+  .about-lead,
+  .about-copy .about-lead {
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .about-content > p:not(.about-lead),
+  .about-copy p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .about-founder {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .about-details {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about-detail {
+    width: 100%;
+    min-height: 0 !important;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .about-detail:last-child {
+    border-bottom: 0;
+  }
+
+  .about-detail-value {
+    font-size: 16px;
+  }
+
+
+  /* ---------- CONTACT ---------- */
+
+  .contact {
+    width: 100%;
+    min-height: 100svh;
+    padding:
+      25px
+      var(--page-padding);
+  }
+
+  .contact-top {
+    width: 100%;
+    font-size: 7px;
+  }
+
+  .contact-main {
+    width: 100%;
+    padding: 55px 0;
+  }
+
+  .contact-eyebrow {
+    margin-bottom: 25px;
+    font-size: 8px;
+  }
+
+  .contact-main h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(55px, 17vw, 100px);
+    line-height: .78;
+    overflow-wrap: break-word;
+  }
+
+  .contact-intro {
+    width: 100%;
+    max-width: 330px;
+    margin: 22px 0 28px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 330px;
+    margin-top: 35px;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 8px;
+  }
+
+  .contact-footer {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 7px;
+  }
+
+
+  /* ---------- PROJECT ENQUIRY ---------- */
+
+  .project-enquiry {
+    width: 100%;
+    margin:
+      70px
+      0
+      0;
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .enquiry-heading {
+    width: 100%;
+  }
+
+  .enquiry-label {
+    margin-bottom: 22px;
+    font-size: 8px;
+  }
+
+  .enquiry-heading h3 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(38px, 11vw, 65px);
+    line-height: .88;
+  }
+
+  .enquiry-heading p {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .enquiry-form {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .form-row {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .enquiry-form input,
+  .enquiry-form select,
+  .enquiry-form textarea {
+    width: 100%;
+    min-width: 0;
+    font-size: 14px;
+    padding: 13px 0;
+  }
+
+  .enquiry-form textarea {
+    min-height: 115px;
+  }
+
+  .form-submit-wrap {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .form-submit {
+    width: 100%;
+    min-width: 0;
+    min-height: 56px;
+  }
+
+  .form-note {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  .site-footer {
+    width: 100%;
+    padding:
+      65px
+      var(--page-padding)
+      25px;
+  }
+
+  .footer-top {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 55px;
+  }
+
+  .footer-brand {
+    font-size: 15px;
+  }
+
+  .footer-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer-top p {
+    width: 100%;
+    max-width: 320px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .footer-grid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px 25px;
+    padding-bottom: 50px;
+  }
+
+  .footer-column {
+    min-width: 0;
+  }
+
+  .footer-column:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .footer-label {
+    margin-bottom: 18px;
+    font-size: 7px;
+  }
+
+  .footer-column a {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 9px;
+    font-size: 7px;
+  }
+
+  .footer-bottom span,
+  .footer-bottom span:nth-child(2),
+  .footer-bottom span:last-child {
+    text-align: left;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES — MAX 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  :root {
+    --page-padding: 18px;
+  }
+
+  .site-header {
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo-mark {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .menu-toggle {
+    width: 45px;
+    height: 45px;
+    flex-basis: 45px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-title {
+    font-size: clamp(50px, 16.5vw, 80px);
+  }
+
+  .hero-title-bottom {
+    font-size: clamp(35px, 10vw, 55px);
+  }
+
+  .hero-description p {
+    font-size: 11px;
+  }
+
+  .section-heading {
+    font-size: clamp(45px, 14vw, 70px);
+  }
+
+  .services-header h2,
+  .work-header h2,
+  .process-header h2 {
+    font-size: clamp(52px, 17vw, 80px);
+  }
+
+  .service-item,
+  .process-item {
+    grid-template-columns: 24px minmax(0, 1fr) 30px;
+    gap: 10px;
+  }
+
+  .service-main h3,
+  .process-item h3 {
+    font-size: clamp(21px, 7.2vw, 30px);
+  }
+
+  .service-main p,
+  .process-item p {
+    font-size: 9px;
+  }
+
+  .project-visual,
+  .project-large .project-visual {
+    min-height: 270px;
+  }
+
+  .project-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-meta {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .statement h2 {
+    font-size: clamp(48px, 15vw, 75px);
+  }
+
+  .about-image {
+    aspect-ratio: .92 / 1;
+  }
+
+  .about-content h2,
+  .about-heading {
+    font-size: clamp(45px, 14vw, 70px);
+  }
+
+  .contact-main h2 {
+    font-size: clamp(52px, 17vw, 82px);
+  }
+
+  .enquiry-heading h3 {
+    font-size: clamp(36px, 11vw, 55px);
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — MAX 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+  :root {
+    --page-padding: 16px;
+  }
+
+  .site-header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .menu-toggle {
+    width: 43px;
+    height: 43px;
+    flex-basis: 43px;
+  }
+
+  .hero {
+    padding-top: 92px;
+  }
+
+  .hero-title {
+    font-size: 16.5vw;
+  }
+
+  .hero-title-bottom {
+    font-size: 10vw;
+  }
+
+  .hero-description p {
+    font-size: 10.5px;
+  }
+
+  .mobile-menu nav a {
+    font-size: 28px;
+    grid-template-columns: 24px minmax(0, 1fr) 18px;
+  }
+
+  .services-header h2,
+  .work-header h2,
+  .process-header h2 {
+    font-size: 16vw;
+  }
+
+  .service-item,
+  .process-item {
+    grid-template-columns: 20px minmax(0, 1fr) 27px;
+    gap: 8px;
+  }
+
+  .service-main h3,
+  .process-item h3 {
+    font-size: 21px;
+  }
+
+  .service-main p,
+  .process-item p {
+    font-size: 8.5px;
+  }
+
+  .project-visual,
+  .project-large .project-visual {
+    min-height: 240px;
+  }
+
+  .statement h2 {
+    font-size: 15vw;
+  }
+
+  .about-content h2,
+  .about-heading {
+    font-size: 15vw;
+  }
+
+  .contact-main h2 {
+    font-size: 16vw;
+  }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  .project:hover .project-visual {
+    transform: none;
+  }
+
+  .project:hover .project-visual::before {
+    transform: translateX(-100%);
+  }
+
+  .service-item:hover,
+  .process-item:hover {
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+  }
+
+  .service-item:hover .service-arrow {
+    background: transparent;
+    color: var(--white);
+    transform: none;
+  }
+
+  .about-image:hover img {
+    transform: scale(1.02);
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+
+}
+
+
+/* =========================================================
+   FINAL OVERFLOW PROTECTION
+========================================================= */
+
+.hero,
+.intro,
+.services,
+.work,
+.statement,
+.process,
+.about,
+.contact,
+.site-footer,
+.project-enquiry {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+
+  .hero,
+  .intro,
+  .services,
+  .work,
+  .statement,
+  .process,
+  .about,
+  .contact,
+  .site-footer,
+  .project-enquiry {
+    overflow-x: hidden;
+  }
+
+}
